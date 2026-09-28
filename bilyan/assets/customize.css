@@ -1,0 +1,18 @@
+/* Keep uploaded logos uncropped, including narrow or wide artwork. */
+.brand.brand-custom{background:transparent;display:flex;align-items:center;justify-content:center}
+.brand.brand-custom img{position:static;width:100%;height:100%;max-width:100%;object-fit:contain}
+.topbar{height:auto}.topbar .container{min-height:34px;height:auto;padding-block:7px;gap:12px}
+.topbar,.cart-count,.button,.story-banner{color:var(--on-brand)}
+.button:hover{color:var(--on-brand-hover)}
+.button-white,.button-continue{color:var(--red);background:white}
+.button-white:hover,.button-continue:hover{color:var(--red);background:var(--brand-soft)}
+.story-banner .eyebrow,.story-banner p,.graphic-dot{color:inherit}
+.tag-icon,.category-filter.active,.front-page-categories .category-card:after{background:var(--brand-soft)}
+.category-card:hover,.shop-category-card:hover,.front-page-categories .category-card:hover,.category-filter.active{border-color:var(--brand-border)}
+.category-icon .icon,.remove-item{color:var(--red)}
+.hero-copy,.hero-tag,.footer-grid>div,.about-layout>div{min-width:0;overflow-wrap:anywhere}
+.story-image{display:flex;align-items:center;justify-content:center;min-width:0}
+.story-image img{max-height:340px;width:100%;object-fit:contain;border-radius:var(--radius)}
+.about-art:has(.about-custom-image){padding:0;overflow:hidden}
+.about-art .about-custom-image{width:100%;height:auto;max-height:600px;object-fit:contain}
+@media(max-width:600px){.story-image img{max-height:240px}.topbar .container{flex-wrap:wrap}.hero-tag{max-width:90%}}
