@@ -1,6 +1,6 @@
 <?php
 defined('ABSPATH') || exit;
-define('BILYAN_VERSION', '1.5.0');
+define('BILYAN_VERSION', '1.5.1');
 require_once get_template_directory() . '/inc/catalog.php';
 require_once get_template_directory() . '/inc/orders.php';
 require_once get_template_directory() . '/inc/setup.php';

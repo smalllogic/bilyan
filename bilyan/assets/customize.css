@@ -16,3 +16,14 @@
 .about-art:has(.about-custom-image){padding:0;overflow:hidden}
 .about-art .about-custom-image{width:100%;height:auto;max-height:600px;object-fit:contain}
 @media(max-width:600px){.story-image img{max-height:240px}.topbar .container{flex-wrap:wrap}.hero-tag{max-width:90%}}
+
+/* Contact page content: give its WhatsApp details a clear, dedicated finish. */
+.contact-page-content:has(a[href*="wa.me"]){position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:12px;margin-bottom:72px;padding:clamp(30px,5vw,58px) 24px;text-align:center;background:radial-gradient(ellipse at 50% 0%,var(--brand-soft,#fbebeb),transparent 66%),var(--soft);border:1px solid var(--line);border-radius:16px;box-shadow:0 16px 44px #2623210a}
+.contact-page-content:has(a[href*="wa.me"])>*{max-width:100%;margin-bottom:0}
+.contact-page-content:has(a[href*="wa.me"]) h2,.contact-page-content:has(a[href*="wa.me"]) h3{margin:0;color:var(--ink);font-size:clamp(25px,3vw,34px);letter-spacing:-.04em}
+.contact-page-content:has(a[href*="wa.me"]) p{max-width:560px;color:var(--muted);font-size:14px;line-height:1.75}
+.contact-page-content a[href*="wa.me"]{display:inline-flex;align-items:center;justify-content:center;gap:12px;margin-top:10px;padding:14px 24px;border:1px solid #16a34a;border-radius:999px;background:#16a34a;color:#fff!important;font-size:14px;font-weight:700;line-height:1.4;text-decoration:none!important;box-shadow:0 8px 18px #16a34a2e;transition:transform .18s,background .18s,box-shadow .18s}
+.contact-page-content a[href*="wa.me"]:after{content:"↗";font-size:17px;line-height:1}
+.contact-page-content a[href*="wa.me"]:hover{transform:translateY(-2px);background:#12813b;border-color:#12813b;box-shadow:0 11px 22px #16a34a38}
+.contact-page-content a[href*="wa.me"]:focus-visible{outline-color:#12813b}
+@media(max-width:600px){.contact-page-content:has(a[href*="wa.me"]){margin-top:0;margin-bottom:45px;padding:30px 20px;border-radius:12px}.contact-page-content a[href*="wa.me"]{width:100%;max-width:320px}}
