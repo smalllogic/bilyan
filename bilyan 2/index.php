@@ -1,2 +1,0 @@
-<?php defined('ABSPATH') || exit; get_header(); ?>
-<section class="container standard-page"><h1><?php echo is_home() ? 'Latest stories' : 'Explore Bilyan'; ?></h1><?php if (have_posts()): while (have_posts()): the_post(); ?><article class="prose"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><?php if (is_singular()) the_content(); else the_excerpt(); ?></article><?php endwhile; the_posts_pagination(); else: ?><p>There’s nothing here yet.</p><?php endif; ?></section><?php get_footer(); ?>
